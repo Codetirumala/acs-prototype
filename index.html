@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartRisk AI: ACS Risk Prediction Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HeartRisk AI: ACS Risk Prediction Tool</h1>
+        </header>
+        <main>
+            <form id="risk-form">
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="blood-pressure">Blood Pressure:</label>
+                    <input type="number" id="blood-pressure" name="blood-pressure" required>
+                </div>
+                <div class="form-group">
+                    <label for="cholesterol">Cholesterol Levels:</label>
+                    <input type="number" id="cholesterol" name="cholesterol" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result" class="hidden">
+                <h2>Risk Score: <span id="risk-score">0.78</span></h2>
+                <p id="explanation">High risk detected. You need to seek treatment.</p>
+            </div>
+            
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
